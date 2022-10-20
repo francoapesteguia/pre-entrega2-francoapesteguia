@@ -1,0 +1,810 @@
+html{
+    font-size: 62.5%;
+}
+
+
+#body__all{
+    font-family: grandstander;
+    margin: 0%;
+    padding: 0%;
+    min-height: 100vh;
+    background: url(../img/pexels-pixabay-159519.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0% auto;
+}
+
+a{
+    text-decoration: none;
+    padding: .5rem .5rem;
+    display: inline-block;
+}
+
+
+/* HEADER */
+
+
+
+header{
+    background: linear-gradient(rgba(8, 8, 8, 0.966), rgba(234, 221, 202, 0.514));
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar .navbar__logo{
+    max-width: 150px;
+    min-width: 150px;
+}
+
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.menu .menu__navegacion{
+    font-size: 2em;
+    color: #000000;
+    transition: all .3s ease-in-out;
+    border-radius: .4em;
+}
+
+.menu .menu__navegacion:hover{
+    background-color: #4d1f1f79;
+    color: #efefef;
+}
+
+/* HEADER */
+
+
+/* MAIN */
+
+
+
+
+.frente__box{
+    display: flex;
+    background: linear-gradient(rgba(234, 221, 202, 0.315), rgba(234, 221, 202, 0.25));
+    padding: 5rem;
+}
+
+.grupo5 .box3 h2{
+    font-size: 4em;
+
+}
+
+.grupo5 .box3 p {
+    text-align: center;
+    font-size: 2.3em;
+    color: rgb(2, 2, 2);
+    margin: 1rem;
+    max-width: 40em;
+}
+
+.frente__box .grupo5{
+    display: flex;
+    margin: 0%;
+    text-align: center;
+}
+
+.frente__box .grupo5 .frente__iframe {
+    padding: 1%;
+    background-color: #4d1f1f;
+    border-radius: 2rem;
+    height: 43rem;
+    height: 40rem;
+}
+
+.frente__box .grupo5 .frente__iframe iframe{
+    width: 43rem;
+    width: 40rem;
+    border-radius: 2rem;
+    height: 100%;
+}
+
+.frente__alg{
+    display: grid;
+    background-color: #d69a56ea;
+    height: auto;;
+    align-content: center;
+    justify-items: center;
+    padding-top: 0;
+    
+}
+
+.frente__alg h2{
+    margin-top: 1rem;   
+    height: 1rem;
+    font-size: 2em;
+}
+
+.frente__alg p{
+    font-size: 1.5em;
+}
+
+.frente__alg .frente__lista ul{
+    list-style: none;
+    display:flex;
+    width: 40rem;
+    justify-content: space-around;
+    padding: 0;
+}
+
+hr{
+    margin-bottom: 2%;
+}
+
+.frente__marcas {
+    display: flex;
+    text-align: center;
+    color: rgb(239, 239, 239);
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.frente__marcas .frente__marcas--img ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+    gap: 3rem;
+    list-style: none;
+}
+
+.frente__marcas .frente__marcas--img li{
+    padding: 1%;
+    background-color: #271414a4;
+    border-radius: 3rem;
+    font-size: 2.5em;
+    max-width: 38rem;
+    transition: transform .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.frente__marcas .frente__marcas--img li:hover{
+    transform: scale(1.1);
+
+}
+
+.frente__marcas .frente__marcas--img li img{
+    border-radius: 3rem;
+    width: 100%;
+}
+
+.frente__marcas h2{
+    font-size: 3em;
+}
+
+/* MAIN */
+
+hr{
+    margin-top: 3rem;
+}
+
+/* FORMULARIO */
+
+#formulario{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+#formulario .h1trabajo{
+    font-size: 25px;
+    display: flex;
+    background: linear-gradient(rgba(234, 221, 202, 0.514), rgba(234, 221, 202, 0.514));
+    max-width: fit-content;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+form{
+    background-color: rgba(185, 184, 184, 0.829);
+    width: 750px;
+    margin: 2rem auto;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+.h1trabajo{
+    text-align: center;
+    
+}
+
+.nombrecompleto{
+    width: 185px;
+    border-color: black;
+    background: rgba(211, 202, 202, 0.281);
+}
+
+.border{
+    border-color: black;
+    border-radius: 3px;
+    background: rgba(211, 202, 202, 0.281);
+    
+}
+
+
+/* FORMULARIO */
+
+
+
+
+/* LOGO WHATSAPP MOVEDIZO */
+
+.logomove{
+    position:fixed;
+    top: 85%;
+    left: 95%;
+    animation: tada 1.2s infinite;
+}
+
+
+.logowpp a{
+    text-decoration: none;}
+
+
+.logomove h6{
+    font-size: 1.3rem;
+    position: relative;
+    bottom: 6rem;
+    right: 10.5rem;
+    background-color: rgb(116, 163, 104);
+    border-radius: .4rem;
+    border-style:double;
+    color: black;
+} 
+
+/* LOGO WHATSAPP MOVEDIZO */
+
+/* TABLA */
+main .lis{
+    text-align: center;
+    list-style-position: inside;
+}
+
+table{
+    border: none;
+    background: linear-gradient(rgba(5, 7, 12, 0.45), rgba(5, 7, 12, 0.75)) ;
+    margin: 0 auto;
+    font-size: 2rem;
+    border-radius: 1rem;
+    color: #efefef;
+    margin-bottom: 5rem;
+}
+.table__border{
+    border-radius: 1rem;
+    text-align: center;
+    border-color: rgb(127, 42, 206);
+}
+/* TABLA */
+
+/* PIE DE PAGINA */
+
+footer{
+    background-color:rgb(59, 14, 68);
+    width:100% ;
+}
+
+
+.grupo-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo-1 .box .figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grupo-1 .box img{
+    width: 25em;
+}
+
+
+.grupo-1 .box h2{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.grupo-1 .box h4{
+    color: white;
+    font-size: 2em;
+    margin-left: 4.5rem;
+}
+
+.grupo-1 .box h3{
+    color: white;
+    margin-left: 3rem;
+    font-size: 1.6em;
+    ;
+}
+
+.grupo-1 .box h5{
+    color: white;
+    margin-left: 2.5rem ;
+    font-size: 1em;
+    text-align: right;
+}
+
+.grupo-1 .box p{
+    color: #efefef;
+    margin: 0%;
+    text-align: center;
+    
+}
+
+.grupo-1 .redes a{
+    display: flex;
+    background-color: rgb(59, 14, 68);
+    text-decoration: none;
+    padding: .3rem;
+}
+.grupo-1 .redes{
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+}
+
+.grupo-1 .redes img{
+    width: 4.5em;
+    background-color: rgb(59, 14, 68);
+    
+}
+
+/* MAIN MAYORISTA */
+
+.mayorista{
+    display: grid;
+    padding: 2rem;
+    margin-bottom: 10%;
+
+}
+
+.mayorista .mayorista__box{
+    display: flex;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.mayorista .mayorista__box .mayorista__text{
+    font-size: 25px;
+    max-width: 60ch;
+    margin-left: 5%;
+}
+
+.mayorista .mayorista__box iframe{
+    padding: 2%;
+    background-color: #4d1f1f;
+    border-radius: 3rem;
+    margin-left: 2rem;
+}
+
+
+/* listas */
+
+.lista {
+    font-size: 0px;
+    padding-bottom:25% ;
+    text-align: center;
+    
+}
+.lista li {
+    position:relative;
+    font-size: 50px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+}
+.lista ul {
+    position: absolute;
+    display: none;
+    background-color: firebrick;
+    padding: 2% ;
+    border-radius: 5px;
+    margin-left: 5rem;
+}
+.lista a{
+    text-decoration: underline rgb(131, 27, 27);
+    color: chocolate;
+    
+}
+.lista li:hover ul {
+    display:block;
+    
+    
+}
+
+.lista .lista__prod{
+    font-size: 25px;
+    
+}
+
+.carousel{
+    width: 30rem;
+    height: 45rem;
+}
+
+.libros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10rem;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+
+.libros h2{
+    color: #f7f7f7;
+    font-style:unset;
+}
+
+    .libros .libros__economia {
+        transition: transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90, 92, 106, 0.349) 0%, rgba(32, 45, 58, 0.219) 81.3% );
+        border-radius: 1.2em;
+        margin-bottom: 3em;
+        margin-top: 1em;
+        padding: 1em 1em;
+        padding-bottom: 4em;
+    }
+
+
+.libros .libros__economia:hover{
+    transform: scale(1.1);
+}
+
+.libros .libros__top10{
+    transition: transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90, 92, 106, 0.349) 0%, rgba(32, 45, 58, 0.219) 81.3% );
+    border-radius: 1.2em;
+    margin-bottom: 3em;
+    margin-top: 1em;
+    padding: 1em 1em;
+    padding-bottom: 6.5em;
+}
+
+.libros .libros__top10:hover{
+    transform: scale(1.1);
+}
+
+.libros .libros__cocina{
+    transition: transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90, 92, 106, 0.349) 0%, rgba(32, 45, 58, 0.219) 81.3% );
+    border-radius: 1.2em;
+    margin-bottom: 3em;
+    margin-top: 1em;
+    padding: 1em 1em;
+    padding-bottom: 3em;
+}
+
+.libros .libros__cocina:hover{
+    transform: scale(1.1);
+}
+
+/* libros2 */
+
+.libros2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10rem;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+
+.libros2 h2{
+    color: #f7f7f7;
+    font-style:unset;
+}
+
+
+
+.libros2 .libros2__ficcion{
+    transition: transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90, 92, 106, 0.349) 0%, rgba(32, 45, 58, 0.219) 81.3% );
+    border-radius: 1.2em;
+    margin-bottom: 3em;
+    margin-top: 1em;
+    padding: 1em 1em;
+    padding-bottom: 6.5em;
+}
+
+.libros2 .libros2__ficcion:hover{
+    transform: scale(1.1);
+}
+
+.libros2 .libros2__autoayuda{
+    transition: transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90, 92, 106, 0.349) 0%, rgba(32, 45, 58, 0.219) 81.3% );
+    border-radius: 1.2em;
+    margin-bottom: 3em;
+    margin-top: 1em;
+    padding: 1em 1em;
+    padding-bottom: 6.5em;
+}
+
+.libros2 .libros2__autoayuda:hover{
+    transform: scale(1.1);
+}
+
+.libros2 .libros2__clasicos{
+    transition: transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90, 92, 106, 0.349) 0%, rgba(32, 45, 58, 0.219) 81.3% );
+    border-radius: 1.2em;
+    margin-bottom: 3em;
+    margin-top: 1em;
+    padding: 1em 1em;
+    padding-bottom: 4em;
+}
+
+.libros2 .libros2__clasicos:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*media*/
+
+/* @media screen and (max-width: 768px){
+    .menu{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar{
+    flex-direction: column;
+    align-items: center;
+}
+
+} */
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .menu{
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+.frente__box .grupo5{
+        flex-direction: column;
+        font-size: .7em;
+        align-items: center;
+    }
+
+.frente__box .grupo5 .frente__iframe{
+        width: 30rem;
+        height: 30rem;
+        padding: 1rem;
+    }
+
+.frente__box .grupo5 .frente__iframe iframe{
+        width: 30rem;
+        height: 35rem;
+    }
+
+.frente__alg{
+        font-size: .8em;
+    }
+
+.frente__alg .frente__lista ul{
+    justify-content: space-evenly;
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+.frente__alg .frente__lista ul li img{
+        width: 25px;
+    }
+
+.frente__marcas{
+        flex-direction: column;
+    }
+
+.frente__marcas .frente__marcas--img ul{
+        flex-direction: column;
+        justify-content: center;
+        margin: 5rem 0;
+        padding: 0;
+    }
+
+.frente__marcas .frente__marcas--img li{
+        width: 10em;
+        height: 10em;
+        margin-bottom: 3rem;
+    }
+
+.frente__marcas .frente__marcas--img li img{
+        width: 8em;
+        height: 8em;
+    }
+
+.frente__marcas .frente__marcas--img li h5{
+        font-size: .5em;
+    }
+
+.frente__marcas h2{
+        font-size: 1.8em;
+    }
+
+    .logowpp{
+        display: none;
+    }
+
+    .grupo-1{
+        flex-wrap: wrap;
+        font-size: .8em;
+        margin: 0;
+        padding-bottom: 1rem;
+    }
+
+    .grupo-1 .redes{
+        padding: 1rem;
+    }
+
+    .grupo-1 .box p{
+        padding: 1rem;
+    }
+
+    .grupo-1 .box h5{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .grupo-1 .box h3{
+        margin: .5em 0;
+        text-align: center;
+    }
+
+    .grupo-1 .box h4{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .libros{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .libros2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    body{
+        font-size: .6em;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu{
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+.frente__box .grupo5{
+        flex-direction: column;
+        font-size: .7em;
+        align-items: center;
+        width: auto;
+    }
+
+    .frente__box .grupo5 .frente__iframe{
+        width: 20rem;
+        height: 20rem;
+        padding: 1rem;
+    }
+
+    .frente__box .grupo5 .frente__iframe iframe {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .frente__alg .frente__lista ul{
+        flex-wrap: wrap;
+        width: 100%;
+        gap: .5rem;
+    }
+
+    .frente__alg .frente__lista ul li img{
+        width: 25px;
+    }
+
+    .frente__marcas .frente__marcas--img ul{
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+        margin-bottom: 2rem;
+    }
+
+    .frente__marcas .frente__marcas--img ul li{
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .frente__marcas .frente__marcas--img ul li img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .frente__marcas .frente__marcas--img .frente__marcas--filgo{
+        height: 35rem;
+    }
+
+    .logowpp{
+        display: none;
+    }
+
+    .grupo-1{
+        flex-wrap: wrap;
+    }
+
+    .grupo-1 .box .redes{
+        margin-left: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .grupo-1 .box h3{
+        margin-left: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .grupo-1 .box h4{
+        margin-left: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .grupo-1 .box h5{
+        margin-left: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .libros{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3em;
+    }
+
+    .libros2{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15em;
+    }
+
+}
