@@ -1,0 +1,67 @@
+footer{
+    background-color:rgb(59, 14, 68);
+    width:100%;
+}
+
+.grupo-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .box img{
+        width: 25em;
+}
+
+    .box h2{
+        color: white;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .box h4{
+        color: white;
+        font-size: 2em;
+    }
+
+    
+    .box h3{
+        color: white;
+        font-size: 1.6em;
+        ;
+    }
+
+    .box h5{
+        color: white;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .box p{
+        color: #efefef;
+        margin: 0%;
+        text-align: center;
+        
+    }
+
+    .redes{
+        text-decoration: none;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
+
+        a{
+            display: flex;
+            background-color: rgb(59, 14, 68);
+            text-decoration: none;
+            padding: .3rem;
+        }
+
+        img{
+            width: 3.5rem;
+            background-color: rgb(59, 14, 68);
+        }
+    }
+}

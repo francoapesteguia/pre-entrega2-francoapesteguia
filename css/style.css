@@ -1,4 +1,4 @@
-html{
+/* html{
     font-size: 62.5%;
 }
 
@@ -13,6 +13,12 @@ body{
 }
 
 .container{
+    max-width: 1200px;
+    margin: 0% auto;
+
+}
+
+.container2{
     max-width: 1200px;
     margin: 0% auto;
 }
@@ -40,11 +46,11 @@ h5{
 }
 h6{
     font-weight: bold;
-}
+} */
 
 /* HEADER */
 
-header{
+/* header{
     background: linear-gradient(rgba(8, 8, 8, 0.966), rgba(234, 221, 202, 0.514));
 }
 
@@ -78,13 +84,13 @@ header{
 .menu .menu__navegacion:hover{
     background-color: #4d1f1f79;
     color: #efefef;
-}
+} */
 
 /* HEADER */
 
 /*boxnueva*/
 
-.new-box{
+/* .new-box{
         font-family: 'Poppins', sans-serif;
         margin: 0;
         padding: 0;
@@ -173,9 +179,9 @@ header{
     font-size: 2.2em;
     color: white;
     /* margin-right: 2.5rem; */
-}
+/* } */
 
-.quotes .box:hover {
+/* .quotes .box:hover {
     color: #f2f2f2;
     box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
 }
@@ -220,21 +226,101 @@ background: -moz-linear-gradient(-45deg, #4b384c 15%, #da5de2 100%);
 background: -webkit-linear-gradient(-45deg, #4b384c 15%,#da5de2 100%);
 background: linear-gradient(135deg, #4b384c 15%,#da5de2 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b384c', endColorstr='#da5de2',GradientType=1 );
-}
+} */ 
 
 
 
 /* MAIN */
 
-#galery article a{
+/* #galery article a{
     transition: transform .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 #galery article a:hover{
     transform:scale(1.1);
+} */
+/* .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 2rem;
 }
 
-.frente__box{
+#size{
+    height: 350px ;
+}
+
+#size2{
+    height: 520px ;
+}
+
+.card {
+    transform: translate(-50% -50%);
+    width: 350px;
+    height: 430px;
+    background: #262626;
+    overflow: hidden;
+}
+.card .imgBx,
+.card .details {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.card .imgBx {
+    top: 0;
+    left: 0;
+}
+.card:hover .imgBx {
+    top: 0;
+    left: -100%;
+}
+.card .imgBx img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.card .details {
+    background: #262626;
+    top: 0;
+    left: 100%;
+    padding: 60px 30px;
+    border: 1px solid #efefef;
+}
+.card:hover .details {
+    top: 0;
+    left: 0%;
+}
+.card .details h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    border-bottom: 2px solid #fff;
+    font-size: 2em;
+
+}
+.card .details p {
+    margin: 20px 0 0;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    font-family: system-ui;
+} */
+
+
+/* nuevas animaciones galery */
+
+
+
+
+/* .frente__box{
     display: flex;
     background: linear-gradient(rgba(234, 221, 202, 0.315), rgba(234, 221, 202, 0.25));
     padding: 5rem;
@@ -344,19 +430,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b384c', end
     font-size: 3em;
 }
 
-/* MAIN */
-
 .hr1{
     margin-top: 3rem;
     color:orange;
     margin-bottom: 2%;
     opacity: 1;
     border-top: 3px solid;
-}
+} */
 
 /* FORMULARIO */
 
-#formulario{
+/* #formulario{
     display: grid;
     justify-content: center;
     justify-items: center;
@@ -394,8 +478,7 @@ form{
     border-color: black;
     border-radius: 3px;
     background: rgba(211, 202, 202, 0.281);
-    
-}
+} */
 
 
 /* FORMULARIO */
@@ -405,7 +488,7 @@ form{
 
 /* LOGO WHATSAPP MOVEDIZO */
 
-.logomove{
+/* .logomove{
     position:fixed;
     top: 85%;
     left: 95%;
@@ -426,12 +509,13 @@ form{
     border-radius: .4rem;
     border-style:double;
     color: black;
-} 
+    
+}  */
 
 /* LOGO WHATSAPP MOVEDIZO */
 
 /* TABLA */
-main .lis{
+/* main .lis{
     text-align: center;
     list-style-position: inside;
 }
@@ -449,12 +533,12 @@ table{
     border-radius: 1rem;
     text-align: center;
     border-color: rgb(127, 42, 206);
-}
+} */
 /* TABLA */
 
 /* PIE DE PAGINA */
 
-footer{
+/* footer{
     background-color:rgb(59, 14, 68);
     width:100%;
 }
@@ -464,15 +548,6 @@ footer{
     justify-content: center;
     align-items: center;
 }
-
-.grupo-1 .box .figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 .grupo-1 .box img{
     width: 25em;
@@ -528,11 +603,11 @@ footer{
     width: 4.5em;
     background-color: rgb(59, 14, 68);
     
-}
+} */
 
 /* MAIN MAYORISTA */
 
-.mayorista{
+/* .mayorista{
     display: grid;
     padding: 2rem;
     margin-bottom: 10%;
@@ -556,12 +631,12 @@ footer{
     background-color: #4d1f1f;
     border-radius: 3rem;
     margin-left: 2rem;
-}
+} */
 
 
 /* listas */
 
-.lista {
+/* .lista {
     font-size: 0px;
     padding-bottom:25% ;
     text-align: center;
@@ -596,9 +671,9 @@ footer{
 .lista .lista__prod{
     font-size: 25px;
     
-}
+} */
 
-/* efects carousel */
+/* efects carousel
 
 
 .hovereffect {
@@ -694,9 +769,9 @@ footer{
 .carousel{
     width: 30rem;
     height: 45rem;
-}
+} */
 
-.libros{
+/* .libros{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -759,7 +834,7 @@ footer{
 
 /* libros2 */
 
-.libros2{
+/* .libros2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -816,11 +891,11 @@ footer{
 
 .libros2 .libros2__clasicos:hover{
     transform: scale(1.1);
-}
+} */ 
 
 /* Estilos contacto */
 
-.card{
+/* .card2{
     background: rgba(228, 131, 20, 0.911);
     border-radius: 10px;
     justify-content: center;
@@ -835,17 +910,16 @@ footer{
 .btn:hover{
     background-color: rgb(206, 68, 61);
     transition: all 0.7s ease 0s;
+} */
+
+
+
+/* @media (min-width: 992px){
+    .col-lg-3{
+        flex: 0 0 auto;
+        width: 30%;
+    }
 }
-
-
-
-@media (min-width: 992px){
-.col-lg-3 {
-    flex: 0 0 auto;
-    width: 30%;
-}
-}
-
 
 @media screen and (max-width: 768px) {
 
@@ -1276,4 +1350,4 @@ footer{
         font-size: 2.4em;
     }
 
-}
+} */

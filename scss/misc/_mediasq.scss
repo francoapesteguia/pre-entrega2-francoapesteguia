@@ -1,0 +1,460 @@
+// media (min-width: 992px){
+//     .col-lg-3 {
+//         flex: 0 0 auto;
+//         width: 30%;
+// }
+// }
+
+@media screen and (max-width: 768px) {
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .menu{
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+.frente__box .grupo5{
+        flex-direction: column;
+        font-size: .7em;
+        align-items: center;
+
+        .frente__iframe{
+            width: 30rem;
+            height: 30rem;
+            padding: 1rem;
+
+            iframe{
+                width: 30rem;
+                height: 35rem;
+            }
+        }
+    }
+
+
+.frente__alg{
+        font-size: .8em;
+
+        .frente__lista ul{
+            justify-content: space-evenly;
+            margin: 0%;
+            padding: 0%;
+            
+        }
+    }
+
+.frente__alg .frente__lista ul{
+    justify-content: space-evenly;
+    margin: 0%;
+    padding: 0%;
+
+    li img{
+        width: 25px;
+    }
+    
+}
+
+.frente__marcas{
+        flex-direction: column;
+
+        h2{
+            font-size: 1.8em;
+        }
+
+        &--img ul{
+            flex-direction: column;
+            justify-content: center;
+            margin: 5rem 0;
+            padding: 0;
+
+            li{
+                width: 10em;
+                height: 10em;
+                margin-bottom: 3rem;
+
+                img{
+                    width: 8em;
+                    height: 8em;
+                }
+
+                h5{
+                    font-size: .5em;
+                }
+            }
+        }
+    }
+
+// .frente__marcas .frente__marcas--img ul{
+//         flex-direction: column;
+//         justify-content: center;
+//         margin: 5rem 0;
+//         padding: 0;
+//     }
+
+    .logowpp{
+        display: none;
+    }
+
+    .grupo-1{
+        flex-wrap: wrap;
+        margin: 0;
+        padding-bottom: 1rem;
+        font-size: .8em;
+
+        .redes{
+            padding: 1rem;
+        }
+
+        .box p{
+            padding: 1rem;
+
+            h5{
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+
+            h3{
+                margin: .5em 0;
+                text-align: center;
+            }
+
+            h4{
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+    }
+
+
+    .libros{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .libros2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .quotes{
+        justify-content: center;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        gap: 1rem;
+
+        .box{
+            width: 60vw;
+            justify-content: center;
+
+            &::after{
+                font-size: 100px;
+                bottom: -18%;
+                right: 2.9%;
+            }
+
+            &::before{
+                font-size: 100px;
+            }
+
+            p {
+                font-size: 1.4em;
+                font-weight: bold;
+                width: 100%;
+                margin-left: 0;
+            }
+
+            h2{
+                margin: 0;
+                font-size: 1.7em;
+            }
+        }
+    }
+
+    .new-box .title-card h1{
+        color: #f9f6f6;
+        font-size: 1.3em;
+    }
+
+    .new-box .title-card h3{
+        font-size: 1.1em;
+        color: #938383;
+    }
+}
+
+
+@media screen and (max-width: 424px){
+    body{
+        font-size: .6em;
+    }
+    .frente__alg .frente__lista ul{
+        justify-content: center;
+    }
+
+    .frente__box .grupo5 .frente__iframe{
+        width: 22rem;
+        height: 23rem;
+
+        iframe{
+            width: 22rem;
+            height: 23rem;
+        }
+    }
+
+
+    .frente__marcas .frente__marcas--img ul{
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+        margin-bottom: 2rem;
+
+        li{
+            width: 30rem;
+            height: 30rem;
+
+            h5{
+                font-size: 1.1em;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+
+
+    .frente__marcas .frente__marcas--img .frente__marcas--filgo{
+        height: 35rem;
+    }
+
+    .quotes{
+        justify-content: center;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        gap: 1rem;
+
+        .box{
+            width: 60vw;
+            justify-content: center;
+
+            &::after{
+                font-size: 75px;
+                bottom: -12%;
+                right: 0.9%;
+            }
+
+            &::before{
+                font-size: 75px;
+                top: -7px;
+            }
+
+            p {
+                font-size: 2em;
+                font-weight: bold;
+                width: 100%;
+                margin-left: 0;
+            }
+
+            h2{
+                margin: 0;
+                font-size: 2.2em;
+            }
+
+        }
+    }
+
+
+    .new-box .title-card h1{
+        color: #f9f6f6;
+        font-size: 3em;
+    }
+
+    .new-box .title-card h3{
+        font-size: 2em;
+        color: #938383;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    body{
+        font-size: .7em;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu{
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .frente__box .grupo5{
+        flex-direction: column;
+        font-size: .7em;
+        align-items: center;
+        width: auto;
+
+        .frente__iframe{
+            width: 20rem;
+            height: 20rem;
+            padding: 1rem;
+
+            iframe {
+                width: 20rem;
+                height: 20rem;
+            }
+        }
+    }
+
+    .frente__alg .frente__lista ul{
+        flex-wrap: wrap;
+        width: 100%;
+        gap: .5rem;
+
+        li img{
+            width: 25px;
+        }
+    }
+
+    .frente__marcas .frente__marcas--img ul{
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+        margin-bottom: 2rem;
+
+        li{
+            width: 30rem;
+            height: 30rem;
+
+            h5{
+                font-size: .9em;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+
+    .frente__marcas .frente__marcas--img .frente__marcas--filgo{
+        height: 35rem;
+    }
+
+    .logowpp{
+        display: none;
+    }
+
+    .grupo-1{
+        flex-wrap: wrap;
+        font-size: 1.2em;
+
+        .box{
+            .redes{
+                margin-left: 0;
+                padding: 0;
+                justify-content: center;
+            }
+
+            h3{
+                margin-left: 0;
+                padding: 0;
+                text-align: center;
+            }
+
+            h4{
+                margin-left: 0;
+                padding: 0;
+                text-align: center;
+            }
+
+            h5{
+                margin-left: 0;
+                padding: 0;
+                text-align: center;
+            }
+
+            p{
+                font-size: 1.2em;
+            }
+        
+        }
+    }
+
+    .libros{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3em;
+    }
+
+    .libros2{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15em;
+    }
+
+    .quotes{
+        justify-content: center;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        gap: 1rem;
+
+        .box{
+            width: 60vw;
+            justify-content: center;
+
+            &::after{
+                font-size: 60px;
+                bottom: -6%;
+                right: 1.9%;
+            }
+
+            &::before{
+                font-size: 60px;
+            }
+
+            p {
+                font-size: 2.2em;
+                font-weight: bold;
+                width: 100%;
+                margin-left: 0;
+            }
+
+            h2{
+                margin: 0;
+                font-size: 2.4em;
+            }
+        }
+    }
+
+    .new-box .title-card h1{
+        color: #f9f6f6;
+        font-size: 1.8em;
+    }
+
+    .new-box .title-card h3{
+        font-size: 1.5em;
+        color: #938383;
+    }
+
+    .new-box .title-card h1{
+        font-size: 3.6em;
+    }
+
+    .new-box .title-card h3{
+        font-size: 2.4em;
+    }
+
+}

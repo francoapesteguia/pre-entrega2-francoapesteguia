@@ -1,0 +1,36 @@
+/* HEADER */
+
+header{
+    background: linear-gradient(rgba(8, 8, 8, 0.966), rgba(234, 221, 202, 0.514));
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .navbar__logo{
+        max-width: 150px;
+        min-width: 150px;
+    }
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+
+    .menu__navegacion{
+        font-size: 2em;
+        color: #000000;
+        transition: all .3s ease-in-out;
+        border-radius: .4em;
+
+        &:hover{
+            background-color: #4d1f1f79;
+            color: #efefef;
+        }
+    }
+}
