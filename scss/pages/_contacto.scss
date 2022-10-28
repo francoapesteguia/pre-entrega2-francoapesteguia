@@ -1,25 +1,35 @@
-#formulario{
-    display: grid;
+.formulario{
+    display: flex;
     justify-content: center;
-    justify-items: center;
+    margin-bottom: 3rem;
 
     .h1trabajo{
         font-size: 25px;
-        display: flex;
-        background: linear-gradient(rgba(234, 221, 202, 0.514), rgba(234, 221, 202, 0.514));
-        max-width: fit-content;
-        border-radius: 1rem;
-        margin-top: 1rem;
+        margin-bottom: 2rem ;
+        border-bottom: 1px solid;
         text-align: center;
+    }
+
+    .formulario__posimg{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .formulario__posimg .formulario__avatar img{
+        width: 500px;
+        margin-top: 2rem;
+        border-bottom: 3px solid;
     }
 }
 
 form{
-    background-color: rgba(185, 184, 184, 0.829);
-    width: 750px;
-    margin: 2rem auto;
+    background-color: rgba(208, 202, 247, 0.918);
+    width: 425px;
+    padding: 2rem;
+    margin-top: 2rem;
     border-radius: 5px;
     font-size: 1.4rem;
+    gap: 1rem;
 }
 
 .nombrecompleto{

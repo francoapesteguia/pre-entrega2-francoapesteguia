@@ -185,10 +185,15 @@
         font-size: 1.1em;
         color: #938383;
     }
+
+    .formulario .formulario__posimg .formulario__avatar img{
+        width: 290px;
+    }
 }
 
+// MEDIA 425
 
-@media screen and (max-width: 424px){
+@media screen and (max-width: 425px){
     body{
         font-size: .6em;
     }
@@ -227,7 +232,6 @@
             }
         }
     }
-
 
 
     .frente__marcas .frente__marcas--img .frente__marcas--filgo{
@@ -270,7 +274,6 @@
         }
     }
 
-
     .new-box .title-card h1{
         color: #f9f6f6;
         font-size: 3em;
@@ -280,9 +283,21 @@
         font-size: 2em;
         color: #938383;
     }
+
+    
+    .formulario .formulario__posimg .formulario__avatar img{
+    display: none;
+    }
+
+    .formulario .form1 .text-area{
+        width: 150px;
+        height: 50px;
+    }
 }
 
-@media screen and (min-width: 320px) and (max-width: 375px) {
+// MEDIA 320
+
+@media screen and (max-width: 375px) {
     body{
         font-size: .7em;
     }
@@ -306,8 +321,8 @@
         width: auto;
 
         .frente__iframe{
-            width: 20rem;
-            height: 20rem;
+            width: 22rem;
+            height: 22rem;
             padding: 1rem;
 
             iframe {
@@ -455,6 +470,57 @@
 
     .new-box .title-card h3{
         font-size: 2.4em;
+    }
+
+    form{
+        width: 260px;
+        height: 580px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0;
+        padding: .5rem;
+    }
+
+
+    .formulario .formulario__posimg .formulario__avatar img{
+        // border-bottom: 3px solid;
+        display: none;
+    }
+
+    .formulario .form1 .text-area{
+        width: 150px;
+        height: 50px;
+    }
+    
+
+    #card__size{
+        text-align: center;
+        h5{
+        font-size: 2.2em!important;
+    }
+
+    p{
+        padding: 1rem 2rem;
+        font-size: 1.4em !important;
+    }
+}
+
+    .img-fluid{
+        width: 280px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .formulario .card__position{
+        display: flex;
+        justify-content: center;
+    }
+
+    .formulario .form1 fieldset{
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
     }
 
 }

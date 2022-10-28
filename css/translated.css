@@ -206,25 +206,31 @@ footer {
   opacity: 1;
   border-top: 3px solid; }
 
-#formulario {
-  display: grid;
+.formulario {
+  display: flex;
   justify-content: center;
-  justify-items: center; }
-  #formulario .h1trabajo {
+  margin-bottom: 3rem; }
+  .formulario .h1trabajo {
     font-size: 25px;
-    display: flex;
-    background: linear-gradient(rgba(234, 221, 202, 0.514), rgba(234, 221, 202, 0.514));
-    max-width: fit-content;
-    border-radius: 1rem;
-    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid;
     text-align: center; }
+  .formulario .formulario__posimg {
+    display: flex;
+    align-items: flex-end; }
+  .formulario .formulario__posimg .formulario__avatar img {
+    width: 500px;
+    margin-top: 2rem;
+    border-bottom: 3px solid; }
 
 form {
-  background-color: rgba(185, 184, 184, 0.829);
-  width: 750px;
-  margin: 2rem auto;
+  background-color: rgba(208, 202, 247, 0.918);
+  width: 425px;
+  padding: 2rem;
+  margin-top: 2rem;
   border-radius: 5px;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  gap: 1rem; }
 
 .nombrecompleto {
   width: 185px;
@@ -706,9 +712,11 @@ form {
     font-size: 1.3em; }
   .new-box .title-card h3 {
     font-size: 1.1em;
-    color: #938383; } }
+    color: #938383; }
+  .formulario .formulario__posimg .formulario__avatar img {
+    width: 290px; } }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 425px) {
   body {
     font-size: .6em; }
   .frente__alg .frente__lista ul {
@@ -762,9 +770,14 @@ form {
     font-size: 3em; }
   .new-box .title-card h3 {
     font-size: 2em;
-    color: #938383; } }
+    color: #938383; }
+  .formulario .formulario__posimg .formulario__avatar img {
+    display: none; }
+  .formulario .form1 .text-area {
+    width: 150px;
+    height: 50px; } }
 
-@media screen and (min-width: 320px) and (max-width: 375px) {
+@media screen and (max-width: 375px) {
   body {
     font-size: .7em; }
   .navbar {
@@ -781,8 +794,8 @@ form {
     align-items: center;
     width: auto; }
     .frente__box .grupo5 .frente__iframe {
-      width: 20rem;
-      height: 20rem;
+      width: 22rem;
+      height: 22rem;
       padding: 1rem; }
       .frente__box .grupo5 .frente__iframe iframe {
         width: 20rem;
@@ -870,4 +883,35 @@ form {
   .new-box .title-card h1 {
     font-size: 3.6em; }
   .new-box .title-card h3 {
-    font-size: 2.4em; } }
+    font-size: 2.4em; }
+  form {
+    width: 260px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+    padding: .5rem; }
+  .formulario .formulario__posimg .formulario__avatar img {
+    display: none; }
+  .formulario .form1 .text-area {
+    width: 150px;
+    height: 50px; }
+  #card__size {
+    text-align: center; }
+    #card__size h5 {
+      font-size: 2.2em !important; }
+    #card__size p {
+      padding: 1rem 2rem;
+      font-size: 1.4em !important; }
+  .img-fluid {
+    width: 280px;
+    margin: 0;
+    padding: 0; }
+  .formulario .card__position {
+    display: flex;
+    justify-content: center; }
+  .formulario .form1 fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px; } }

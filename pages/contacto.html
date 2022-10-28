@@ -41,11 +41,11 @@
     </header>
 <!--FORMULARIO-->
     <main>
-        <section id="formulario">
-            <div class="h1trabajo">
-                <h1>Formulario para trabajo</h1>
-            </div>
+        <section class="formulario">
             <form class="form1"> 
+                <div class="h1trabajo">
+                    <h1>Formulario para trabajo</h1>
+                </div>
                 <fieldset>
                     <legend><strong> Datos personales</strong></legend>
                     <div>
@@ -75,9 +75,12 @@
                     <div>
                         <label for="Telefono">Telefono</label>
                         <input type="tel" id="Telefono" required placeholder="Telefono" class="border">
+                        <!-- <label for="codigoarea">Codigo de area</label>
+                        <input type="tel" name="codigoarea" id="codigoarea" required placeholder="+54 385..." class="border"> -->
+                    </div>
+                    <div>
                         <label for="codigoarea">Codigo de area</label>
                         <input type="tel" name="codigoarea" id="codigoarea" required placeholder="+54 385..." class="border">
-                        <br>
                     </div>
                     <div>
                         <label for="email_empleado">Email</label>
@@ -95,14 +98,14 @@
                             <option value="Experto" label="Experto"></option>
                         </select>
                     </div>
-                    <div>
+                    <!-- <div>
                         <label for="file">Subir CV</label>
                         <input id="file" type="file" name="file" class="border">
-                    </div>
+                    </div> -->
                     <div>
-                        <h3 class="unh3">¿Por qué deberiamos contratarte?</h3>
+                        <h3 class="unh3 text-center">Dejanos un breve comentario y nos contactaremos contigo lo antes posible. ¡GRACIAS!</h3>
                         <label for="Comentario"></label>
-                        <textarea id="comentario" name="comentario" cols="40" rows="10" placeholder="..." class="border"></textarea>
+                        <textarea id="comentario" name="comentario" cols="40" rows="10" placeholder="..." class="border text-area"></textarea>
                     </div>
                 </fieldset>
                 <div class="enviar">
@@ -110,8 +113,13 @@
                     <input type="submit" value="Enviar Formulario"></input>
                 </div>
             </form>
+            <article class="formulario__posimg">
+                <picture class="formulario__avatar">
+                    <img src="../img/avatarmujer-removebg-preview.png" alt="Avatar">
+                </picture>
+            </article>
         </section>
-        <section>
+        <section class="card__position">
             <article class="d-flex justify-content-center">
                 <div class="card2 mb-3" style="max-width: 1200px;">
                     <div class="row g-0">
@@ -119,9 +127,9 @@
                             <img src="../img/lectura.png" class="img-fluid rounded-start" alt="chica leyendo mientras toma café">
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body">
+                            <div class="card-body" id="card__size">
                                 <h5 class="card2-title fs-1">¡Forma parte de NOSOTROS!</h5>
-                                <p class="card2-text fs-4">¡Unite a la comunidad de Chez-Guada para armar tus propias listas, reseñar tus libros preferidos y recomendar los que más te gustan!</p>
+                                <p class="card2-text fs-4 text-center">¡Unite a la comunidad de Chez-Guada como CLIENTE, como parte de NUESTROS TALLERES y TAMBIEN PUEDES TENER UNA FRANQUICIA DE CHEZ GUADA para formar parte de nosotros. <br> ¡Dejamos un mensaje y nos contactaremos lo antes posible para resolver todas tus dudas!</p>
                                 <button type="button" class="btn btn-lg btn-outline-light">
                                     <a href="https://wa.me/+543854871654" class="text-dark">Ser parte de CHEZ-GUADA</a>
                                 </button>
