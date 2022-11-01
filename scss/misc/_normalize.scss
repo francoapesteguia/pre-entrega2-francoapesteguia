@@ -53,3 +53,16 @@ ul{
     margin: 0;
     list-style: none;
 }
+
+$backgrounds: (
+    orange: rgba(240, 153, 22, 0.897),
+    grayob:  rgba(211, 202, 202, 0.281),
+    grayl: rgba(208, 202, 247, 0.918)
+);
+
+@each $key, $value in $backgrounds {
+
+    .bg-#{$key} {
+        background: $value;
+    }
+}

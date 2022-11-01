@@ -25,13 +25,10 @@
             background-color: #4d1f1f;
             border-radius: 2rem;
             height: 43rem;
-            height: 40rem; 
 
             iframe{
-                width: 43rem;
-                width: 40rem;
+                @include sizes (43rem, 100%);
                 border-radius: 2rem;
-                height: 100%;
             }
         }
     }
