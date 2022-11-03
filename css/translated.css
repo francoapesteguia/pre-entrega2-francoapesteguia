@@ -785,7 +785,7 @@ form {
   .guide {
     overflow: hidden; } }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (max-width: 576px) {
   .guide {
     overflow: hidden; }
     .guide .guide__step {
@@ -795,7 +795,13 @@ form {
       flex-direction: column;
       align-items: center; }
       .guide .guide__step2 .guide__step--avatar {
-        margin-top: 3rem; } }
+        margin-top: 3rem; }
+  .frente__box .grupo5 .frente__iframe {
+    width: 33rem;
+    height: 28rem; }
+    .frente__box .grupo5 .frente__iframe iframe {
+      width: 31rem;
+      height: 26rem; } }
 
 @media screen and (max-width: 425px) {
   body {
