@@ -169,11 +169,10 @@ footer {
   .frente__alg p {
     font-size: 1.5em; }
   .frente__alg .frente__lista ul {
-    list-style: none;
     display: flex;
-    width: 40rem;
     justify-content: space-around;
-    padding: 0; }
+    padding: 0;
+    gap: 2rem; }
 
 .frente__marcas {
   display: flex;

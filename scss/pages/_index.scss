@@ -53,11 +53,10 @@
     }
 
     .frente__lista ul{
-        list-style: none;
         display:flex;
-        width: 40rem;
         justify-content: space-around;
         padding: 0;
+        gap: 2rem;
     }
 }
 
