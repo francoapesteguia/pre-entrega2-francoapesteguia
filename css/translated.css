@@ -58,7 +58,7 @@ ul {
 /*PARTIALS*/
 /* HEADER */
 header {
-  background: linear-gradient(rgba(8, 8, 8, 0.966), rgba(234, 221, 202, 0.514)); }
+  background: linear-gradient(rgba(8, 8, 8, 0.966), rgba(234, 221, 202, 0.72)); }
 
 .navbar {
   display: flex;
@@ -131,7 +131,7 @@ footer {
 /*PAGES*/
 .frente__box {
   display: flex;
-  background: linear-gradient(rgba(234, 221, 202, 0.315), rgba(234, 221, 202, 0.25));
+  background: linear-gradient(rgba(234, 221, 202, 0.47), rgba(234, 221, 202, 0.6));
   padding: 5rem; }
   .frente__box .grupo5 {
     display: flex;
@@ -198,13 +198,16 @@ footer {
   background-color: #271414a4;
   border-radius: 3rem;
   font-size: 2.5em;
-  max-width: 38rem;
+  max-width: 32rem;
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
   .frente__marcas .frente__marcas--img li:hover {
     transform: scale(1.1); }
-  .frente__marcas .frente__marcas--img li img {
-    border-radius: 3rem;
+  .frente__marcas .frente__marcas--img li a {
     width: 100%; }
+
+.frente__marcas .frente__marcas--img img {
+  border-radius: 3rem;
+  width: 100%; }
 
 .hr1 {
   margin-top: 3rem;
@@ -212,6 +215,67 @@ footer {
   margin-bottom: 2%;
   opacity: 1;
   border-top: 3px solid; }
+
+.guide {
+  width: 100%;
+  height: fit-content;
+  background: linear-gradient(0deg, #140717 0%, #251c3d 36%, #050716 79%);
+  flex-direction: column; }
+  .guide .guide__step2 {
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 10rem;
+    margin-bottom: 10rem; }
+    .guide .guide__step2 .guide__step--text {
+      width: 400px;
+      height: 200px; }
+      .guide .guide__step2 .guide__step--text a {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #efefef;
+        margin-top: 7rem;
+        border: 1px solid white; }
+        .guide .guide__step2 .guide__step--text a h2 {
+          font-size: 2.5em;
+          margin-bottom: 2rem;
+          border-bottom: 1px solid white;
+          width: 25ch;
+          margin-top: 2rem; }
+        .guide .guide__step2 .guide__step--text a p {
+          font-size: 1.7em;
+          margin-bottom: 2rem; }
+  .guide .guide__step {
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 10rem;
+    margin-bottom: 10rem; }
+    .guide .guide__step .guide__step--text {
+      width: 400px;
+      height: 200px; }
+      .guide .guide__step .guide__step--text a {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #efefef;
+        margin-top: 7rem;
+        border: 1px solid white; }
+        .guide .guide__step .guide__step--text a h2 {
+          font-size: 2.5em;
+          margin-bottom: 2rem;
+          border-bottom: 1px solid white;
+          width: 25ch;
+          margin-top: 2rem; }
+        .guide .guide__step .guide__step--text a p {
+          font-size: 1.7em;
+          margin-bottom: 2rem; }
+
+.guide__step--avatar img {
+  width: 250px;
+  height: 400px; }
 
 .formulario {
   display: flex;
@@ -622,15 +686,15 @@ form {
     padding: 0; }
   .frente__box .grupo5 {
     flex-direction: column;
-    font-size: .7em;
+    font-size: .8em;
     align-items: center; }
     .frente__box .grupo5 .frente__iframe {
-      width: 30rem;
-      height: 30rem;
+      width: 50rem;
+      height: 46rem;
       padding: 1rem; }
       .frente__box .grupo5 .frente__iframe iframe {
-        width: 30rem;
-        height: 35rem; }
+        width: 48rem;
+        height: 44rem; }
   .frente__alg {
     font-size: .8em; }
     .frente__alg .frente__lista ul {
@@ -653,8 +717,8 @@ form {
       margin: 5rem 0;
       padding: 0; }
       .frente__marcas--img ul li {
-        width: 10em;
-        height: 10em;
+        width: 32rem;
+        height: 28rem;
         margin-bottom: 3rem; }
         .frente__marcas--img ul li img {
           width: 8em;
@@ -667,7 +731,7 @@ form {
     flex-wrap: wrap;
     margin: 0;
     padding-bottom: 1rem;
-    font-size: .8em; }
+    font-size: 1.1em; }
     .grupo-1 .redes {
       padding: 1rem; }
     .grupo-1 .box p {
@@ -717,19 +781,35 @@ form {
     font-size: 1.1em;
     color: #938383; }
   .formulario .formulario__posimg .formulario__avatar img {
-    width: 290px; } }
+    width: 290px; }
+  .guide {
+    overflow: hidden; } }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .guide {
+    overflow: hidden; }
+    .guide .guide__step {
+      flex-direction: column;
+      align-items: center; }
+    .guide .guide__step2 {
+      flex-direction: column;
+      align-items: center; }
+      .guide .guide__step2 .guide__step--avatar {
+        margin-top: 3rem; } }
 
 @media screen and (max-width: 425px) {
   body {
     font-size: .6em; }
   .frente__alg .frente__lista ul {
     justify-content: center; }
+  .frente__box .grupo5 .box3 {
+    font-size: 1.4em; }
   .frente__box .grupo5 .frente__iframe {
-    width: 22rem;
-    height: 23rem; }
+    width: 33rem;
+    height: 28rem; }
     .frente__box .grupo5 .frente__iframe iframe {
-      width: 22rem;
-      height: 23rem; }
+      width: 31rem;
+      height: 26rem; }
   .frente__marcas .frente__marcas--img ul {
     flex-direction: column;
     margin: 0%;
@@ -778,7 +858,26 @@ form {
     display: none; }
   .formulario .form1 .text-area {
     width: 150px;
-    height: 50px; } }
+    height: 50px; }
+  .guide {
+    flex-direction: column !important;
+    overflow: hidden; }
+    .guide .guide__step {
+      flex-direction: column;
+      align-items: center; }
+    .guide .guide__step2 {
+      flex-direction: column;
+      align-items: center; }
+  .grupo-1 .box p {
+    font-size: 2em; }
+  .grupo-1 .box h2 {
+    font-size: 4em; }
+  .grupo-1 .box h3 {
+    font-size: 3em; }
+  .grupo-1 .box h4 {
+    font-size: 3em; }
+  .grupo-1 .box h5 {
+    font-size: 3em; } }
 
 @media screen and (max-width: 375px) {
   body {
@@ -797,12 +896,12 @@ form {
     align-items: center;
     width: auto; }
     .frente__box .grupo5 .frente__iframe {
-      width: 22rem;
-      height: 22rem;
+      width: 31rem;
+      height: 24rem;
       padding: 1rem; }
       .frente__box .grupo5 .frente__iframe iframe {
-        width: 20rem;
-        height: 20rem; }
+        width: 29rem;
+        height: 22rem; }
   .frente__alg .frente__lista ul {
     flex-wrap: wrap;
     width: 100%;
@@ -828,7 +927,7 @@ form {
     display: none; }
   .grupo-1 {
     flex-wrap: wrap;
-    font-size: 1.2em; }
+    font-size: .9em; }
     .grupo-1 .box .redes {
       margin-left: 0;
       padding: 0;
@@ -836,7 +935,8 @@ form {
     .grupo-1 .box h3 {
       margin-left: 0;
       padding: 0;
-      text-align: center; }
+      text-align: center;
+      font-size: 2em; }
     .grupo-1 .box h4 {
       margin-left: 0;
       padding: 0;
@@ -844,9 +944,10 @@ form {
     .grupo-1 .box h5 {
       margin-left: 0;
       padding: 0;
-      text-align: center; }
+      text-align: center;
+      font-size: 1.5em; }
     .grupo-1 .box p {
-      font-size: 1.2em; }
+      font-size: 1.7em; }
   .libros {
     display: flex;
     flex-wrap: wrap;
@@ -917,4 +1018,39 @@ form {
   .formulario .form1 fieldset {
     display: flex;
     flex-wrap: wrap;
-    width: 250px; } }
+    width: 250px; }
+  .guide__step--avatar img {
+    display: none; }
+  .guide .guide__step {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    margin-bottom: 10rem; }
+    .guide .guide__step .guide__step--text {
+      width: 100%;
+      height: 100px; }
+      .guide .guide__step .guide__step--text a {
+        margin-top: 10rem;
+        padding: 3rem;
+        margin-bottom: 10rem; }
+        .guide .guide__step .guide__step--text a h2 {
+          font-size: 3em; }
+        .guide .guide__step .guide__step--text a p {
+          font-size: 2.3em; }
+  .guide {
+    overflow: hidden;
+    padding-bottom: 5rem; }
+    .guide .guide__step2 {
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10rem;
+      margin-bottom: 10rem; }
+      .guide .guide__step2 .guide__step--text {
+        width: 100%;
+        height: 100px; }
+        .guide .guide__step2 .guide__step--text a {
+          padding: 3rem; }
+          .guide .guide__step2 .guide__step--text a h2 {
+            font-size: 3em; }
+          .guide .guide__step2 .guide__step--text a p {
+            font-size: 2.3em; } }

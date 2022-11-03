@@ -1,6 +1,6 @@
 .frente__box{
     display: flex;
-    background: linear-gradient(rgba(234, 221, 202, 0.315), rgba(234, 221, 202, 0.25));
+    background: linear-gradient(rgba(234, 221, 202, 0.47), rgba(234, 221, 202, 0.60));
     padding: 5rem;
 
     .grupo5{
@@ -32,8 +32,6 @@
             }
         }
     }
-
-
 }
 
 .frente__alg{
@@ -63,8 +61,6 @@
     }
 }
 
-
-
 .frente__marcas {
     display: flex;
     text-align: center;
@@ -87,24 +83,31 @@
     list-style: none;
 }
 
-.frente__marcas .frente__marcas--img li{
+.frente__marcas .frente__marcas--img {
+
+    li{
     padding: 1%;
     background-color: #271414a4;
     border-radius: 3rem;
     font-size: 2.5em;
-    max-width: 38rem;
+    max-width: 32rem;
     transition: transform .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     &:hover{
         transform: scale(1.1);
     }
 
+    a{
+        width: 100%;
+    }
+    }
+
     img{
         border-radius: 3rem;
         width: 100%;
     }
-}
 
+}
 
 .hr1{
     margin-top: 3rem;
@@ -112,4 +115,88 @@
     margin-bottom: 2%;
     opacity: 1;
     border-top: 3px solid;
+}
+
+
+.guide{
+    @include sizes(100%, fit-content);
+    background: linear-gradient(0deg, rgba(20,7,23,1) 0%, rgba(37,28,61,1) 36%, rgb(5, 7, 22) 79%);
+    flex-direction: column;
+
+    .guide__step2{
+        justify-content: center;
+        margin-top: 5rem;
+        gap: 10rem;
+        margin-bottom: 10rem;
+
+        .guide__step--text{
+            @include sizes (400px, 200px);
+
+            a{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #efefef;
+                margin-top: 7rem;
+                border: 1px solid white;
+
+                h2{
+                    font-size: 2.5em;
+                    margin-bottom: 2rem;
+                    border-bottom: 1px solid white;
+                    width: 25ch;
+                    margin-top: 2rem;
+                }
+
+                p{
+                    font-size: 1.7em;
+                    margin-bottom: 2rem;
+
+                }
+            }
+        }
+
+        }
+
+    .guide__step{
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin-top: 5rem;
+        gap: 10rem;
+        margin-bottom: 10rem;
+
+        .guide__step--text{
+            @include sizes (400px, 200px);
+
+            a{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #efefef;
+                margin-top: 7rem;
+                border: 1px solid white;
+
+                h2{
+                    font-size: 2.5em;
+                    margin-bottom: 2rem;
+                    border-bottom: 1px solid white;
+                    width: 25ch;
+                    margin-top: 2rem;
+                }
+
+                p{
+                    font-size: 1.7em;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+.guide__step--avatar img{
+    @include sizes (250px, 400px);
 }

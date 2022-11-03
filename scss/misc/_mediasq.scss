@@ -1,9 +1,3 @@
-// media (min-width: 992px){
-//     .col-lg-3 {
-//         flex: 0 0 auto;
-//         width: 30%;
-// }
-// }
 
 @media screen and (max-width: 768px) {
 
@@ -22,21 +16,18 @@
 
 .frente__box .grupo5{
         flex-direction: column;
-        font-size: .7em;
+        font-size: .8em;
         align-items: center;
 
         .frente__iframe{
-            width: 30rem;
-            height: 30rem;
+            @include sizes (50rem, 46rem);
             padding: 1rem;
 
             iframe{
-                width: 30rem;
-                height: 35rem;
+                @include sizes (48rem, 44rem);
             }
         }
     }
-
 
 .frente__alg{
         font-size: .8em;
@@ -74,8 +65,7 @@
             padding: 0;
 
             li{
-                width: 10em;
-                height: 10em;
+                @include sizes (32rem, 28rem);
                 margin-bottom: 3rem;
 
                 img{
@@ -90,13 +80,6 @@
         }
     }
 
-// .frente__marcas .frente__marcas--img ul{
-//         flex-direction: column;
-//         justify-content: center;
-//         margin: 5rem 0;
-//         padding: 0;
-//     }
-
     .logowpp{
         display: none;
     }
@@ -105,7 +88,7 @@
         flex-wrap: wrap;
         margin: 0;
         padding-bottom: 1rem;
-        font-size: .8em;
+        font-size: 1.1em;
 
         .redes{
             padding: 1rem;
@@ -131,7 +114,6 @@
             }
         }
     }
-
 
     .libros{
         display: flex;
@@ -189,6 +171,30 @@
     .formulario .formulario__posimg .formulario__avatar img{
         width: 290px;
     }
+
+    .guide{
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .guide{
+        overflow: hidden;
+
+        .guide__step{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .guide__step2{
+            flex-direction: column;
+            align-items: center;
+
+            .guide__step--avatar{
+                margin-top: 3rem;
+            }
+        }
+    }
 }
 
 // MEDIA 425
@@ -201,17 +207,22 @@
         justify-content: center;
     }
 
-    .frente__box .grupo5 .frente__iframe{
-        width: 22rem;
-        height: 23rem;
+    .frente__box .grupo5 {
+
+        .box3{
+            font-size: 1.4em;
+        }
+
+        .frente__iframe{
+        width: 33rem;
+        height: 28rem;
 
         iframe{
-            width: 22rem;
-            height: 23rem;
+            width: 31rem;
+            height: 26rem;
         }
     }
-
-
+}
     .frente__marcas .frente__marcas--img ul{
         flex-direction: column;
         margin: 0%;
@@ -293,9 +304,46 @@
         width: 150px;
         height: 50px;
     }
+
+    .guide{
+        flex-direction: column!important;
+        overflow: hidden;
+
+        .guide__step{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .guide__step2{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .grupo-1 .box {
+            p {
+            font-size: 2em;
+            }
+
+            h2{
+                font-size: 4em;
+            }
+
+            h3{
+                font-size: 3em;
+            }
+
+            h4{
+                font-size: 3em;
+            }
+
+            h5{
+                font-size: 3em;
+            }
+    }
 }
 
-// MEDIA 320
+// MEDIA 375
 
 @media screen and (max-width: 375px) {
     body{
@@ -321,13 +369,11 @@
         width: auto;
 
         .frente__iframe{
-            width: 22rem;
-            height: 22rem;
+            @include sizes (31rem, 24rem);
             padding: 1rem;
 
             iframe {
-                width: 20rem;
-                height: 20rem;
+                @include sizes (29rem, 22rem);
             }
         }
     }
@@ -374,7 +420,7 @@
 
     .grupo-1{
         flex-wrap: wrap;
-        font-size: 1.2em;
+        font-size: .9em;
 
         .box{
             .redes{
@@ -387,6 +433,7 @@
                 margin-left: 0;
                 padding: 0;
                 text-align: center;
+                font-size: 2em;
             }
 
             h4{
@@ -399,10 +446,11 @@
                 margin-left: 0;
                 padding: 0;
                 text-align: center;
+                font-size: 1.5em;
             }
 
             p{
-                font-size: 1.2em;
+                font-size: 1.7em;
             }
         
         }
@@ -484,7 +532,6 @@
 
 
     .formulario .formulario__posimg .formulario__avatar img{
-        // border-bottom: 3px solid;
         display: none;
     }
 
@@ -522,5 +569,62 @@
         flex-wrap: wrap;
         width: 250px;
     }
+
+    .guide__step--avatar img{
+        display: none;
+    }
+
+    .guide .guide__step{
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+
+        .guide__step--text{
+            @include sizes (100%, 100px);
+
+        a{
+            margin-top: 10rem;
+            padding: 3rem;
+            margin-bottom: 10rem;
+
+            h2{
+                font-size: 3em;
+            }
+
+            p{
+                font-size: 2.3em;
+            }
+        }
+    }
+}
+
+    .guide{
+        overflow: hidden;
+        padding-bottom: 5rem;
+
+        .guide__step2{
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+
+            .guide__step--text{
+                @include sizes (100%, 100px);
+
+            a{
+                padding: 3rem;
+
+                h2{
+                    font-size: 3em;
+                }
+
+                p{
+                    font-size: 2.3em;
+                }
+            }
+        }
+    }
+}
 
 }
